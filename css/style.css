@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.parallax {
+  position: static;
+}
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+.section-title {
+  margin-top: 40px;
+  margin-right: 0px;
+  margin-bottom: 40px;
+  margin-left: 0px;
+}
+.blogpost {
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+  border-top-color: rgb(238, 238, 238);
+  border-right-color: rgb(238, 238, 238);
+  border-bottom-color: rgb(238, 238, 238);
+  border-left-color: rgb(238, 238, 238);
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.blogpost .date {
+  z-index: 2;
+  position: absolute;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: rgb(255, 255, 255);
+  padding-top: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  padding-left: 8px;
+  box-shadow: rgba(116, 116, 116, 0.3) 0px 1px 3px;
+  top: 40px;
+  right: -4px;
+}
+.blogpost .img-wrap {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 240px;
+}
+.blogpost .img-wrap img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  transition-delay: initial;
+  transition-property: all;
+}
+.blogpost .img-wrap:hover img {
+  transform: scale(1.1);
+}
+.blogpost .title {
+  color: rgb(34, 34, 34);
+  font-size: 28px;
+}
+.blogmeta {
+  width: 100%;
+  clear: both;
+  margin-bottom: 10px;
+}
+.blogmeta ul li {
+  position: relative;
+  width: 50%;
+}
+.blogmeta ul li span {
+  position: absolute;
+  top: 4px;
+  left: 28px;
+  margin-bottom: 10px;
+}
+footer.gram-footer ul.collection > li.collection-header,
+footer.gram-footer ul.collection > li.collection-item {
+  background-image: initial;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  background-size: initial;
+  background-repeat-x: initial;
+  background-repeat-y: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: initial;
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-left-style: initial;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+footer.gram-footer ul.collection {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: initial;
+  border-right-style: initial;
+  border-bottom-style: initial;
+  border-left-style: initial;
+  border-top-color: initial;
+  border-right-color: initial;
+  border-bottom-color: initial;
+  border-left-color: initial;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+footer.page-footer {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+.image.footer {
+  max-width: 90%vp;
+}
+#contact input#your-email,
+#contact textarea#your-message {
+  color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+}
+@media (min-width: 768px) {
+  .blogmeta ul li {
+    float: left;
+  }
+  .blogmeta ul li {
+    float: left;
+  }
+  .blogmeta ul li {
+    float: left;
+  }
+  .blogmeta ul li {
+    float: left;
+  }
+  .blogmeta ul li {
+    float: left;
+  }
+  .blogmeta ul li {
+    float: left;
+  }
+}
