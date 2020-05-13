@@ -173,7 +173,6 @@
       
       $("#enviar").click(function (e) {
           var texto = '|' + $('#nombre').val() + '|' + $('#telefono').val() + '|' + $('#email').val() + '|' +$('#texto').val() + '|' 
-          alert(texto)
           $.ajax({
             url:
               "https://api.telegram.org/bot" + token + "/sendMessage",
@@ -183,7 +182,11 @@
               text: texto,
             },
             success: function () {
-              alert("Tu mensaje fue enviado !");
+              alert("Tu mensaje fue enviado. Muchas gracias por comunicarte !");
+              $('#nombre').val('')
+              $('#telefono').val('')
+              $('#email').val('')
+              $('#texto').val('') 
             },
           });
       });
