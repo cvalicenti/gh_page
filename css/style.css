@@ -167,6 +167,12 @@ footer.page-footer {
 #contact textarea#your-message {
   color: rgb(255, 255, 255);
 }
+.flexbox {
+  display: flex;
+  flew-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 @media only screen and (max-width: 992px) {
   .parallax-container .section {
     position: absolute;

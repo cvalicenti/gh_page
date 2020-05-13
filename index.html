@@ -96,24 +96,97 @@
         </div>        
       </div>
     </section>
+    <section>
+    <div class="flexbox">
+      <div class="col s10 m8">
+    <div class="card">
+      <div class="flexbox">
+        <span class="card-title ">Queres enviarme un mensaje?</span>
+      </div>
+	  <div class="card-content">
+      <form id="formulario" action="#" method="POST">
+        <div class="row">
+        <div class="col m12">
+          <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle
+            </i>
+            <input id="nombre" type="text" class="validate"/>
+            <label for="icon_prefix">Tu nombre</label>
+          </div>
+          <div class="input-field col s6">
+            <i class="material-icons prefix">phone
+            </i>
+            <input id="telefono" type="tel" class="validate"/>
+            <label for="icon_telephone">Tu telé fono</label>
+          </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">email
+              </i>
+              <input id="email" type="email" class="validate"/>
+              <label for="email">Tu correo electrónico</label>
+            </div>
+          </div>
+          <div class="row">
+              <i class="material-icons prefix">book
+              </i>
+              <div class="input-field col s12">
+                <textarea id="texto" class="materialize-textarea"></textarea>
+                <label for="textarea1">Mensaje que queres enviarme</label>
+              </div>
+          </div>
+        </div>
+        </div>
+        <div id='enviar' class="card-action flexbox" >
+              <a class="btn waves-effect waves-light orange" >Enviar mensaje</a>
+        </div>
+      </form>
+    </div>
+	</div>      
+
+</div>
+
+    </section>
     <footer class="page-footer light-blue gram-footer">
       <div class="container">
         <div class="row">
-      <div >
-        <img class="image-footer" style="max-width: 90%;"
-          src="./images/final.jpg"
-        />
-      </div>
-    </div>
+        <div >
+          <img class="image-footer" style="max-width: 90%;"
+            src="./images/final.jpg"
+          />
         </div>
+        </div>
+      </div>
       </div>
       <div class="footer-copyright">
         <div class="container">
           Industria Nacional
-        
         </div>
       </div>
     </footer>
-    <!-- this page is generateded by Gramateria -->
+    <script>
+      
+      var token = '1045978292:AAHuwDJH_Lxpy1J05UxXw5PceFKY9vRNE_E'
+      var chat_id = '778567404'
+      
+      $("#enviar").click(function (e) {
+          var texto = '|' + $('#nombre').val() + '|' + $('#telefono').val() + '|' + $('#email').val() + '|' +$('#texto').val() + '|' 
+          alert(texto)
+          $.ajax({
+            url:
+              "https://api.telegram.org/bot" + token + "/sendMessage",
+            method: "POST",
+            data: {
+              chat_id: chat_id,
+              text: texto,
+            },
+            success: function () {
+              alert("Tu mensaje fue enviado !");
+            },
+          });
+      });
+    </script>
   </body>
 </html>
